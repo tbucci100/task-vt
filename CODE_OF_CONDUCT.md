@@ -10,8 +10,7 @@ Specifically:
 * Be kind. Be courteous. Be welcoming.
 * Listen. Consider and acknowledge people's points before responding.
 
-Should you experience anything that makes you feel unwelcome in Flutter's
-community, please contact the V&T Task Force team leads (@dnsosa and @aleksei) or, if you prefer, directly contact someone on the team, for instance. We will not tolerate harassment from anyone, and not acting in good faith or abiding by the code of conduct will result in being removed from the repo/team.
+Should you experience anything that makes you feel unwelcome in this community, please contact the V&T Task Force team leads (@dnsosa and @aleksei). We will not tolerate harassment or foul play from anyone. Failure to comply with the code of conduct will result in being removed from the repo/team.
 
 
 ## Questions

@@ -2,7 +2,7 @@ import unittest
 from .nlp_utils import *
 
 
-class TestLoadCord(unittest.TestCase):
+class TestSpacyDoc(unittest.TestCase):
 
     def test_example_spacy_doc_loader(self):
         text = ("When Sebastian Thrun started working on self-driving cars at "

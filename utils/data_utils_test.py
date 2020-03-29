@@ -6,7 +6,7 @@ class TestLoadCord(unittest.TestCase):
 
 	def test_load_preprocessed_cord_from_dir(self):
 		cord_dir = "../data"
-		out = load_preprocessed_cord_from_dir(cord_dir)
+		out = data_utils.load_preprocessed_cord_from_dir(cord_dir)
 		self.assertEqual(out, True)
 
 

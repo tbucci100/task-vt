@@ -30,11 +30,11 @@ Please get yourselves acquainted with the following documents in order to get st
    also documents our conflict resolution policy and encourages people
    to ask questions.
 
-2. [Values](https://github.com/flutter/flutter/wiki/Values),
-   which talks about what we care most about.
+2. [Values](https://github.com/CoronaWhy/task-vt/wiki/V&T-Task-Force-Values) 
+   which talks about why we're doing what we're doing.
 
 3. [Tree hygiene](https://github.com/flutter/flutter/wiki/Tree-hygiene),
-   which covers how to land a PR, how to do code review, how to
+   which covers how to land a pull request (PR), how to do code review, how to
    handle breaking changes, how to handle regressions, and how to
    handle post-commit test failures.
 

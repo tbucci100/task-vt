@@ -1,6 +1,6 @@
 # Vaccines and Therapeutics Task Force Repo
 
-![alt text](./images/coronawhy_logo.jpg)
+![alt text](./misc/images/coronawhy_logo.jpg)
 
 ## About CoronaWhy
 

@@ -1,5 +1,5 @@
 import unittest
-from .nlp_utils import *
+from utils import nlp_utils 
 
 
 class TestSpacyDoc(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from .data_utils import *
+from utils import data_utils
 
 
 class TestLoadCord(unittest.TestCase):

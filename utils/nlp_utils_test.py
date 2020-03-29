@@ -11,7 +11,7 @@ class TestSpacyDoc(unittest.TestCase):
                 "car companies would shake my hand and turn away because I wasn’t "
                 "worth talking to,” said Thrun, in an interview with Recode earlier "
                 "this week.")
-        doc = example_spacy_doc_loader(text)
+        doc = nlp_utils.example_spacy_doc_loader(text)
         for entity in doc.ents:
             print(entity.text, entity.label_)
 

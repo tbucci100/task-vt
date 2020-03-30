@@ -1,0 +1,16 @@
+language: python
+
+install:
+  - pip install -r requirements.txt
+  - pip install pytest==5.2.0
+  - python -m spacy download en_core_web_sm
+
+# commands to run tests
+script:
+  - python -m pytest utils
+#  - python -m pytest covid_mechanism_kg
+#  - python -m pytest drug_treatment_extraction
+#  - python -m pytest main_pipeline
+#  - python -m pytest model_organism_extraction
+#  - python -m pytest paper_evidence_annot
+

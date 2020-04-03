@@ -1,0 +1,19 @@
+#https://www.kaggle.com/rtatman/co-occurrence-matrix-plot-in-python
+import seaborn as sns
+
+df_cvprot.shape[0], df_cvprot.PAPER_ID.nunique()  # <check the input data is block level.
+
+#assumes input data has 4 columns (add assertion)
+def df_co_occurrance(df, strain_group):
+  for i in strain_group:
+    strains_df = df.copy()
+    eval_match = df.SARS_COV.str.contains(i)
+    df[i] = eval_match
+  return strains_df
+
+strains_df = df_co_occurrance(df_cvprot,sars_sin_strains)
+
+strains_df.iloc[:,4:] = strains_df.iloc[:,4:].astype(int) 
+strains_df = strains_df.iloc[:,3:]
+prot_strains_grpd = strains_df.groupby('CVPROT').sum()
+sns.heatmap(prot_strains_grpd)

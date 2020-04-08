@@ -1,7 +1,7 @@
 Introduction:
 
 This implementation attempts to detect negation in medical statements with a <drug> and <treatment> co-occurance. 
-The stanfordCoreNLP server is used to tokenize the text. A list of terms that imply negation (https://github.com/ckbjimmy/clneg) is used as reference for negation detection.
+The stanfordCoreNLP server is used to tokenize and parse the text. A list of trigger terms that imply negation (https://github.com/ckbjimmy/clneg) is used as reference for negation detection.
 
 Pros:
 
@@ -29,7 +29,7 @@ Setup:
 
 Citations:
 
-1. @article{weng2020clinical,
+1.@article{weng2020clinical,
   title={Clinical Text Summarization with Syntax-Based Negation and Semantic Concept Identification},
   author={Weng, Wei-Hung and Chung, Yu-An and Schrasing Tong},
   journal={arXiv preprint arXiv:2003.00353},

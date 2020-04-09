@@ -25,6 +25,6 @@ Currently, the V&T Task Force has plans to work towards [3 concrete deliverables
 
 We have divided the work needed to create these deliverables into subtasks and broken subtasks into more atomic subsubtasks that can be worked on by individual V&T Task Force contributors.
 
-To get started working with this repo please see the [Getting Started Guide](https://github.com/CoronaWhy/task-vt/wiki/Getting-Started-Guide).
+To get started working with this repo please see the [Getting Started Guide](https://github.com/CoronaWhy/task-vt/wiki/Getting-Started-Guide). Also check out if any [Existing Resources](https://github.com/CoronaWhy/task-vt/wiki/Interesting-External-Resources) might be helpful to get you started.
 
 Best of luck and thank you for all your hard work in this fight.

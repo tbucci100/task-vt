@@ -38,5 +38,12 @@ The stanfordCoreNLP server is used to tokenize and parse the text. A list of tri
   year={2020}
 }
 
-2. Manning, Christopher D., Mihai Surdeanu, John Bauer, Jenny Finkel, Steven J. Bethard, and David McClosky. 2014. 
+2.Manning, Christopher D., Mihai Surdeanu, John Bauer, Jenny Finkel, Steven J. Bethard, and David McClosky. 2014. 
    The Stanford CoreNLP Natural Language Processing Toolkit In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations, pp. 55-60. [pdf] [bib]
+
+3.@inproceedings{Neumann2019ScispaCyFA,
+  title={ScispaCy: Fast and Robust Models for Biomedical Natural Language Processing},
+  author={Mark Neumann and Daniel King and Iz Beltagy and Waleed Ammar},
+  year={2019},
+  Eprint={arXiv:1902.07669}
+}

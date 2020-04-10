@@ -1,26 +1,27 @@
-# Introduction:
+# Introduction
 
-This implementation attempts to detect negation in medical statements with a <drug> and <treatment> co-occurance. 
-Each notebook implements a different method and th epros and cons are discussed in the corrresponding notebook. The results are compared in the evaluation notebook.
+This implementation attempts to detect negation in medical statements with a drug and treatment term co-occurance. 
+Each notebook implements a different method and the pros and cons are discussed in the corrresponding notebook. The results are compared in the evaluation notebook.
 The stanfordCoreNLP server is used to tokenize and parse the text. A list of trigger terms that imply negation (https://github.com/ckbjimmy/clneg) is used as reference in some notebooks.
 
-# Structure:
+# Structure
 
 1. The 'data' folder contains:
-	a. Input files containing text to be analysed for negation
-	b. neg_list_complete.txt : A list of terms that imply negation, as per https://github.com/ckbjimmy/clneg
-	d. output\ : Folder with output files containing an addiitonal column that specifies if the text is a negation.
-	e. Human annotated input for evaluation
-	f. Consolidated results across models
+- Input files containing text to be analysed for negation
+- neg_list_complete.txt : A list of terms that imply negation, as per https://github.com/ckbjimmy/clneg
+- output\ : Folder with output files containing an addiitonal column that specifies if the text is a negation.
+- Human annotated input for evaluation
+- Consolidated results across models
 2. The 'notebooks' folder contains:
-	a. a notebook for each implementation method
-	b. a notebook for establishing connection to StandFordCoreNLP
-	c. a notebook for evaluating results
+- a notebook for each implementation method
+- a notebook for establishing connection to StandFordCoreNLP
+- a notebook for evaluating results
 3. helper_funcstions.py contains helper functions used across notebooks
 
-# Setup:
+# Setup
 
 1. Execute the following command line instructions under the data\ folder:
+
 	wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip; \
 	unzip stanford-corenlp-full-2018-02-27.zip; \
 	rm stanford-corenlp-full-2018-02-27.zip; \
@@ -28,7 +29,7 @@ The stanfordCoreNLP server is used to tokenize and parse the text. A list of tri
 	unzip stanford-tregex-2018-02-27.zip; \
 	rm stanford-tregex-2018-02-27.zip; \
 
-Citations:
+# Citations
 
 1.@article{weng2020clinical,
   title={Clinical Text Summarization with Syntax-Based Negation and Semantic Concept Identification},
@@ -36,5 +37,6 @@ Citations:
   journal={arXiv preprint arXiv:2003.00353},
   year={2020}
 }
+
 2. Manning, Christopher D., Mihai Surdeanu, John Bauer, Jenny Finkel, Steven J. Bethard, and David McClosky. 2014. 
    The Stanford CoreNLP Natural Language Processing Toolkit In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations, pp. 55-60. [pdf] [bib]

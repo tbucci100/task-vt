@@ -67,3 +67,27 @@ def tregex_tsurgeon(f, pos, trts):
     os.system("rm stanford-tregex-2018-02-27/ts")
     return ts_out, str(tree)
 
+def regular_encode(texts, tokenizer, maxlen=512):
+    enc_di = tokenizer.batch_encode_plus(
+        texts, 
+        return_attention_masks=False, 
+        return_token_type_ids=False,
+        pad_to_max_length=True,
+        max_length=maxlen
+    )
+    
+    return np.array(enc_di['input_ids'])
+
+def build_model(transformer, max_len=512):
+    """
+    https://www.kaggle.com/xhlulu/jigsaw-tpu-distilbert-with-huggingface-and-keras
+    """
+    input_word_ids = Input(shape=(max_len,), dtype=tf.int32, name="input_word_ids")
+    sequence_output = transformer(input_word_ids)[0]
+    cls_token = sequence_output[:, 0, :]
+    out = Dense(1, activation='sigmoid')(cls_token)
+    
+    model = Model(inputs=input_word_ids, outputs=out)
+    model.compile(Adam(lr=1e-5), loss='binary_crossentropy', metrics=[tf.keras.metrics.Recall(), tf.keras.metrics.Precision(), 'accuracy'])
+    
+    return model

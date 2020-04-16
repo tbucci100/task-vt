@@ -1,0 +1,6 @@
+suggested next steps:
+
+1) add processing of xml source files and rerun subsequent steps
+2) remove counts in step2 sars_other_strains and create heatmap in step5
+3) improve presentation of visuals 
+4) helper functions
